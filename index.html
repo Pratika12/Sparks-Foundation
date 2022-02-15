@@ -1,0 +1,282 @@
+<!-- 
+    
+WEB DEVLOPMENT TASK
+NAME- PRATIKA TRIPATHI
+PROBLEM STATEMENT - CREATE A BASIC BANKING SYSTEM WEBSITE 
+
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!--Embed Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Ubuntu&display=swap"
+        rel="stylesheet" />
+
+    <!--Embed Image icons on buttons-->
+    <script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"></script>
+
+    <!--Favicon-->
+    <link rel="icon" href="https://internship.thesparksfoundation.info/assests/img/logo.png">
+
+    <title>UK Bank</title>
+    <style>
+        /*FOR COMPLETE WEBPAGE*/        
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container-fluid {
+            padding: 3% 10% 0 10%;
+        }
+
+
+        /* NAVBAR */
+        #title {
+            background-color: #516BEB;
+            padding-bottom: 0;
+            color: white;
+        }
+        .navbar {
+            padding: 0 0 4rem 0;
+        }
+
+        .navbar-brand {
+            font-size: 3rem;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+        }
+
+        .nav-item {
+            padding: 0 18px;
+        }
+
+        .nav-link {
+            font-size: 1.2rem;
+            font-family: 'Montserrat-Light', sans-serif;
+        }
+
+        /*Carousel*/
+        .bank-img
+        {
+            width: 100%;
+            height:500px;
+        }
+        .cara
+        {
+            margin:auto 0;
+        }
+
+        /* HEADING */
+        .heading 
+        {
+            font-family: 'Montserrat-Black', sans-serif;
+            font-size: 3rem;
+            line-height: 1.5;
+            width: 80%;
+            font-weight: 800;
+            padding-bottom: 5%;
+            margin-top: 20%;
+        }
+
+        /* BUTTONS AFTER HEADING */
+        .btn 
+        {
+            padding: 2% 2%;
+            margin: 3% 0;
+        }
+
+        /* FEATURES */
+        #features
+        {
+            margin:8% auto;
+            text-align: center;
+        }
+        .feature-box
+        {
+            padding-bottom: 4%;
+        }
+
+        .myicon
+        {
+            margin-bottom:1rem;
+            color:deepskyblue;
+        }
+
+        .cash
+        {
+            margin:20% auto;
+            width:100%;
+            height:400px;
+        }
+
+        /* FOOTER */
+        .foot
+        {
+            text-align: center;
+            height:200px;
+            background-color: #516BEB;
+            color:white;
+            padding:40px;
+        }
+        .foot p
+        {
+            padding: 20px;
+            padding-bottom: 40px;
+            
+        }
+        .footer-link
+        {
+            color:white;
+            padding:10px;
+            text-decoration: none;
+        }
+        .footer-link:hover
+        {
+            font-size:20px;
+            color:darkblue;
+            text-decoration: none;
+        }
+
+        /*HOVER*/
+        .Cust
+        {
+            color:white;
+        }
+        .Cust:hover
+        {
+            text-decoration:none;
+            color:white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Title Section-->
+    <section id="title">
+        <div class="container-fluid">
+            <!-- NavBar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="">UK Bank</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Bank.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ContactUs.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Carousel -->
+
+            <section id="bank">
+                <div id="bank-carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="bank-img" src="images/bank-1.jpg" alt="hello">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="bank-img" src="images/bank-2.jpg" alt="hi">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="bank-img" src="images/bank-3.jpeg" alt="hiii">
+                        </div>
+                    </div>
+                    <a class="cara carousel-control-prev" href="#bank-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="cara carousel-control-next" href="#bank-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Heading -->
+            <div>
+                <div class="row">
+                    <div class="tagline col-lg-6">
+                        <h3 class="heading">A bank that begins with 'U'</h3>
+                        <button type="button" class="btn btn-dark btn-lg" ><a class="Cust" href="ViewAllCust.php"><i class="fas fa-user-friends"></i>
+                            View All Customers</a></button><br>
+                        <button type="button" class="btn btn-dark btn-lg"><a href="Transaction.php" class="Cust"><i class="fas fa-history"></i> Transaction
+                            History</a></button><br>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="cash" src="images/bank-4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Features -->
+  <section id="features">
+    <div class="row container-fluid">
+      <div class="feature-box col-lg-4">
+        <!-- <i class="check-circle fas fa-check-circle"></i> -->
+        <i class="myicon fas fa-check-circle fa-3x"></i>
+        <h3>Deals with money.</h3>
+        <p>It is the easiest way to increase your money without putting it at any risk.</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="myicon fas fa-piggy-bank fa-3x"></i>
+        <h3>Provide loans</h3>
+        <p>Banks provide loans for various requirements such as study loan, car loan, home loan, personal loans, etc.</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="myicon fas fa-money-check-alt fa-3x"></i>
+        <h3>Online Banking</h3>
+        <p>Using the services offered by online banking is simple and easy.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="foot">
+    <a class="footer-link" href="https://www.linkedin.com/in/pratika-tripathi-9a44b11aa/">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/Pratika12/">GitHub</a>
+    <a class="footer-link" href="ContactUs.html">Contact Us</a>
+    <p class="copyright">© 2022 Pratika Tripathi.</p>
+</div>
+</body>
+
+</html>
