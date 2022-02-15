@@ -6,16 +6,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!--Bootstrap 4-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!--Embed Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Ubuntu&display=swap"rel="stylesheet" />
 
-    <!--Favicon-->
     <link rel="icon" href="https://internship.thesparksfoundation.info/assests/img/logo.png">
 
     <title>Transfer Money</title>
@@ -55,7 +52,6 @@
 </head>
 <body>
 <div class="container-fluid">
-    <!--CREATING A FORM FOR SELECTING THE RECEIVER AND AMOUNT TO BE TRANSFERRED-->
     <form method="post" action="Transfer2.php?id=<?php echo $_GET['id'];?>">
         <h1>Transfer To:</h1>
         <select name='to' id="selections" class="form-control browser-default custom-select" required>
@@ -92,7 +88,6 @@
         <input class="submit btn btn-success btn-lg" type="submit">
     </form>
 
-    <!--DISPLAYING THE USER DATA -->
     <table class="table table-bordered table-dark table-hover table-striped table-responsive-md">
         <tr>
         <th>Account Number</th>
