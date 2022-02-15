@@ -7,11 +7,9 @@
     <!--Favicon-->
     <link rel="icon" href="https://internship.thesparksfoundation.info/assests/img/logo.png">
 
-    <!--Bootstrap 4-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         
-    <!--Embed Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Ubuntu&display=swap"
@@ -50,8 +48,6 @@
             width:80%;
             margin:auto;
         }
-
-        /* NAVBAR */
         .navbar {
             padding: 0 0 4rem 0;
         }
@@ -79,7 +75,6 @@
     </style>
 </head>
 <body>  
-    <!-- NavBar -->
     <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="">UK Bank</a>
@@ -105,7 +100,6 @@
     </div>
     <h1>CUSTOMER DETAILS</h1>  
     <div>
-    <!--VIEW ALL CUSTOMERS -->
     <table class="table table-bordered table-dark table-hover table-striped table-responsive-md">
         <thead>
             <tr>
