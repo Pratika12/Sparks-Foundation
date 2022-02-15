@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootstrap 4-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!--Favicon-->
     <link rel="icon" href="https://internship.thesparksfoundation.info/assests/img/logo.png">
 
     <title>Transfering Money</title>
@@ -38,7 +36,6 @@
     <?php
         if($_SERVER['REQUEST_METHOD']=='POST')
         {
-            //RECEIVING THE VALUE OF OPTION FILLED BY THE USER IN THE FORM
             $Sender_Account=$_GET['id'];
             $Receiver_Account=$_POST['to'];
             $Amount=$_POST['Amount'];
@@ -67,7 +64,6 @@
             }
             else if($bal>$Amount)
             {
-                //TRANSACTION
                 $sql="update customers set `Current balance`= ('$bal'-'$Amount') where `Account Number` like ('$Sender_Account');";
                 mysqli_query($conn,$sql);
                 $vari=$bal + $Amount;
